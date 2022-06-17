@@ -1,1 +1,7 @@
-print ("Hello World!")
+import json
+
+with open('test.json') as f:
+   data = json.load(f)
+
+print(data['name'])
+# print ("Hello World!")
