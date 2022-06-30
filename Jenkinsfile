@@ -15,8 +15,8 @@ pipeline {
         stage('Build') {
             steps {
                 git branch: 'main', credentialsId: 'c246691e-23f3-4c7d-814c-d4b103054489', url: 'https://github.com/ikshaku/jenkins-python'
-                sh '''python3 -m pip install requests
-python3 test.py'''
+//                 sh '''python3 -m pip install requests
+// python3 test.py'''
             }
         }
         stage('Test') {
